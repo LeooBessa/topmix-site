@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Topmix Sonorização – Estrutura, sonorização e iluminação profissional para shows, festas corporativas e muito mais. Transformamos eventos em experiências inesquecíveis." />
+  <meta name="keywords" content="eventos, sonorização, iluminação, estrutura, shows, festas, corporativo, painel LED, Topmix" />
+  <meta name="author" content="Topmix Sonorização" />
+  <meta property="og:title" content="Topmix Sonorização – Experiências Inesquecíveis" />
+  <meta property="og:description" content="Estrutura, sonorização e iluminação profissional para o seu evento." />
+  <meta property="og:type" content="website" />
+  <title>Topmix Sonorização – Transformamos Eventos em Experiências Inesquecíveis</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ========================================
+       LOADER ANIMADO
+  ======================================== -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__logo">
+        <img src="assets/images/Projeto Topmix/logo branca.png" alt="Topmix Sonorização" class="loader__logo-img" />
+      </div>
+      <div class="loader__bar">
+        <div class="loader__progress"></div>
+      </div>
+      <p class="loader__text">Carregando experiências...</p>
+    </div>
+  </div>
+
+  <!-- ========================================
+       CURSOR PERSONALIZADO
+  ======================================== -->
+  <div id="cursor" class="cursor" aria-hidden="true"></div>
+  <div id="cursor-follower" class="cursor-follower" aria-hidden="true"></div>
+
+
+  <!-- ========================================
+       NAVEGAÇÃO
+  ======================================== -->
+  <header id="navbar" class="navbar" role="banner">
+    <div class="container navbar__container">
+      <!-- Hamburguer à esquerda -->
+      <button class="navbar__toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="navbar__toggle-line"></span>
+        <span class="navbar__toggle-line"></span>
+        <span class="navbar__toggle-line"></span>
+      </button>
+
+      <!-- Logo centralizada -->
+      <a href="#hero" class="navbar__logo" aria-label="Topmix Sonorização – Início">
+        <img src="assets/images/Projeto Topmix/logo branca.png" alt="Topmix Sonorização" class="navbar__logo-img" />
+      </a>
+
+      <!-- CTA à direita -->
+      <a
+        href="https://wa.me/5584996536781?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento!"
+        class="btn btn--primary navbar__cta"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Solicitar Orçamento
+      </a>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div class="navbar__mobile" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Menu mobile">
+      <nav>
+        <ul class="navbar__mobile-list" role="list">
+          <li><a href="#sobre" class="navbar__mobile-link">Sobre</a></li>
+          <li><a href="#servicos" class="navbar__mobile-link">Serviços</a></li>
+          <li><a href="#portfolio" class="navbar__mobile-link">Portfólio</a></li>
+          <li><a href="#contato" class="navbar__mobile-link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========================================
+         HERO SECTION
+    ======================================== -->
+    <section id="hero" class="hero" aria-label="Seção principal">
+      <!-- Fundo parallax com imagem real -->
+      <div class="hero__bg" id="heroBg" aria-hidden="true">
+        <img
+          src="assets/images/Projeto Topmix/Plano de Fundo.jpeg"
+          alt=""
+          class="hero__bg-img"
+          loading="eager"
+        />
+        <div class="hero__bg-overlay"></div>
+        <!-- Partículas decorativas -->
+        <div class="hero__particles" id="heroParticles" aria-hidden="true"></div>
+      </div>
+
+      <!-- Conteúdo -->
+      <div class="container hero__content">
+        <h1 class="hero__title animate-fade-up" data-delay="0">
+          Transformamos eventos<br />
+          em experiências<br />
+          <span class="hero__title-highlight">inesquecíveis</span>
+        </h1>
+
+        <p class="hero__subtitle animate-fade-up" data-delay="200">
+          Estrutura, sonorização e iluminação profissional para shows,<br class="hero__br" />
+          festas corporativas, casamentos e muito mais.
+        </p>
+
+        <div class="hero__actions animate-fade-up" data-delay="300">
+          <a href="#portfolio" class="btn btn--neon btn--xl">
+            Ver Portfólio
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Estatísticas -->
+        <div class="hero__stats animate-fade-up" data-delay="400">
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-count="500">0</span><span class="hero__stat-plus">+</span>
+            <span class="hero__stat-label">Eventos Realizados</span>
+          </div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-count="15">0</span><span class="hero__stat-plus">+</span>
+            <span class="hero__stat-label">Anos de Experiência</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero__scroll" aria-hidden="true">
+        <div class="hero__scroll-mouse">
+          <div class="hero__scroll-wheel"></div>
+        </div>
+        <span>Role para baixo</span>
+      </div>
+    </section>
+
+    <!-- ========================================
+         SOBRE A EMPRESA
+    ======================================== -->
+    <section id="sobre" class="sobre section" aria-label="Sobre a Topmix">
+      <div class="container">
+
+        <!-- Cabeçalho da seção -->
+        <div class="section__header animate-on-scroll">
+          <span class="section__tag">Quem somos</span>
+          <h2 class="section__title">Mais de uma década criando <span class="highlight">momentos únicos</span></h2>
+        </div>
+
+        <div class="sobre__grid">
+
+          <!-- Texto / História -->
+          <div class="sobre__content animate-on-scroll" data-animation="slide-left">
+            <p class="sobre__text">
+              A <strong>Topmix Sonorização</strong> nasceu com um único propósito: elevar o padrão da produção de eventos no Rio Grande do Norte. Começamos com sonorização profissional e hoje somos referência regional em soluções completas de infraestrutura para eventos de todos os portes.
+            </p>
+            <p class="sobre__text">
+              Com uma equipe de profissionais altamente qualificados e um parque de equipamentos de última geração, entregamos não apenas serviços técnicos — entregamos <em>experiências</em> que ficam na memória de cada participante.
+            </p>
+
+            <!-- Missão, Visão, Valores -->
+            <div class="sobre__mvv">
+              <div class="sobre__mvv-item">
+                <div class="sobre__mvv-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                    <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="sobre__mvv-title">Missão</h3>
+                  <p class="sobre__mvv-text">Transformar eventos em experiências inesquecíveis com tecnologia, criatividade e excelência.</p>
+                </div>
+              </div>
+              <div class="sobre__mvv-item">
+                <div class="sobre__mvv-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="sobre__mvv-title">Visão</h3>
+                  <p class="sobre__mvv-text">Ser a empresa de eventos mais confiável e inovadora do país até 2030.</p>
+                </div>
+              </div>
+              <div class="sobre__mvv-item">
+                <div class="sobre__mvv-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="sobre__mvv-title">Valores</h3>
+                  <p class="sobre__mvv-text">Comprometimento, inovação, segurança e respeito ao cliente em cada projeto.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Diferenciais -->
+          <div class="sobre__diferenciais animate-on-scroll" data-animation="slide-right">
+            <h3 class="sobre__diferenciais-title">Por que escolher a Topmix?</h3>
+            <ul class="sobre__list" role="list">
+              <li class="sobre__list-item">
+                <span class="sobre__list-icon" aria-hidden="true">✓</span>
+                Equipamentos de última geração das melhores marcas do mercado
+              </li>
+              <li class="sobre__list-item">
+                <span class="sobre__list-icon" aria-hidden="true">✓</span>
+                Equipe técnica especializada com mais de 10 anos de experiência
+              </li>
+              <li class="sobre__list-item">
+                <span class="sobre__list-icon" aria-hidden="true">✓</span>
+                Atendimento 24h antes, durante e após o evento
+              </li>
+              <li class="sobre__list-item">
+                <span class="sobre__list-icon" aria-hidden="true">✓</span>
+                Montagem e desmontagem rápida sem impacto na operação
+              </li>
+              <li class="sobre__list-item">
+                <span class="sobre__list-icon" aria-hidden="true">✓</span>
+                Orçamentos personalizados para qualquer porte de evento
+              </li>
+              <li class="sobre__list-item">
+                <span class="sobre__list-icon" aria-hidden="true">✓</span>
+                Total compliance com normas de segurança NR-35 e ABNT
+              </li>
+            </ul>
+
+            <!-- Selo de confiança -->
+            <div class="sobre__seals">
+              <img
+                src="assets/images/Projeto Topmix/selo.png"
+                alt="100% Satisfação Garantida"
+                class="sobre__seal-img"
+                loading="lazy"
+              />
+              <div class="sobre__visual-content-inline">
+                <span class="sobre__visual-number">500+</span>
+                <span class="sobre__visual-label">Eventos realizados com sucesso</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         SERVIÇOS
+    ======================================== -->
+    <section id="servicos" class="servicos section section--dark" aria-label="Nossos Serviços">
+      <div class="container">
+
+        <div class="section__header animate-on-scroll">
+          <span class="section__tag">O que fazemos</span>
+          <h2 class="section__title">Soluções completas para <span class="highlight">o seu evento</span></h2>
+          <p class="section__subtitle">Do planejamento à execução, cuidamos de cada detalhe técnico para que você foque apenas no sucesso do seu evento.</p>
+        </div>
+
+        <div class="servicos__grid">
+
+          <!-- Card 1: Estrutura -->
+          <article class="servico-card animate-on-scroll" data-delay="0">
+            <div class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 7h10M7 11h6"/>
+              </svg>
+            </div>
+            <h3 class="servico-card__title">Estrutura de Eventos</h3>
+            <p class="servico-card__desc">
+              Palcos modulares, tendas, arquibancadas, camarins e toda infraestrutura física necessária para eventos de qualquer porte, instalados com segurança e agilidade.
+            </p>
+            <ul class="servico-card__list" role="list">
+              <li>Palcos de 6m a 24m</li>
+              <li>Tendas e coberturas</li>
+              <li>Grades de segurança</li>
+              <li>Camarins e backstage</li>
+            </ul>
+            <a
+              href="https://wa.me/5584996536781?text=Olá%2C%20tenho%20interesse%20em%20Estrutura%20de%20Eventos!"
+              class="servico-card__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Saiba mais
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </article>
+
+          <!-- Card 2: Sonorização -->
+          <article class="servico-card animate-on-scroll" data-delay="100">
+            <div class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40">
+                <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+              </svg>
+            </div>
+            <h3 class="servico-card__title">Sonorização Profissional</h3>
+            <p class="servico-card__desc">
+              Sistemas de PA de alta fidelidade, line arrays, subwoofers e toda cadeia de áudio profissional para garantir som cristalino em qualquer ambiente, interno ou externo.
+            </p>
+            <ul class="servico-card__list" role="list">
+              <li>Line Array profissional</li>
+              <li>Consoles digitais</li>
+              <li>Monitoração de palco</li>
+              <li>Operação técnica</li>
+            </ul>
+            <a
+              href="https://wa.me/5584996536781?text=Olá%2C%20tenho%20interesse%20em%20Sonorização%20Profissional!"
+              class="servico-card__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Saiba mais
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </article>
+
+          <!-- Card 3: Iluminação -->
+          <article class="servico-card animate-on-scroll" data-delay="200">
+            <div class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40">
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/><circle cx="12" cy="12" r="5"/>
+              </svg>
+            </div>
+            <h3 class="servico-card__title">Iluminação Cênica</h3>
+            <p class="servico-card__desc">
+              Moving heads, strobes, lasers, fog machines e todo o espetáculo visual que transforma um palco comum em uma verdadeira experiência imersiva e emocionante.
+            </p>
+            <ul class="servico-card__list" role="list">
+              <li>Moving heads robotizados</li>
+              <li>Lasers profissionais</li>
+              <li>Efeitos especiais</li>
+              <li>Operação DMX</li>
+            </ul>
+            <a
+              href="https://wa.me/5584996536781?text=Olá%2C%20tenho%20interesse%20em%20Iluminação%20Cênica!"
+              class="servico-card__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Saiba mais
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </article>
+
+          <!-- Card 4: Painel LED -->
+          <article class="servico-card animate-on-scroll" data-delay="300">
+            <div class="servico-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="40" height="40">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="7" cy="10" r="1" fill="currentColor"/><circle cx="12" cy="10" r="1" fill="currentColor"/><circle cx="17" cy="10" r="1" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="servico-card__title">Painéis de LED</h3>
+            <p class="servico-card__desc">
+              Painéis e telões LED de alta resolução para transmissão ao vivo, cenografia digital, branding e qualquer necessidade visual do seu evento, indoor ou outdoor.
+            </p>
+            <ul class="servico-card__list" role="list">
+              <li>LED P2.6 a P10</li>
+              <li>Telas gigantes outdoor</li>
+              <li>Cenografia digital</li>
+              <li>Streaming e IMAG</li>
+            </ul>
+            <a
+              href="https://wa.me/5584996536781?text=Olá%2C%20tenho%20interesse%20em%20Painéis%20de%20LED!"
+              class="servico-card__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Saiba mais
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         PORTFÓLIO
+    ======================================== -->
+    <section id="portfolio" class="portfolio section" aria-label="Portfólio de Eventos">
+      <div class="container">
+
+        <div class="section__header animate-on-scroll">
+          <span class="section__tag">Nosso trabalho</span>
+          <h2 class="section__title">Projetos que <span class="highlight">falam por si</span></h2>
+          <p class="section__subtitle">Confira alguns dos eventos que já realizamos. Cada projeto é único e tratado com a máxima dedicação.</p>
+        </div>
+
+        <!-- Filtros -->
+        <div class="portfolio__filters animate-on-scroll" role="group" aria-label="Filtrar portfólio por categoria">
+          <button class="portfolio__filter active" data-filter="all">Todos</button>
+          <button class="portfolio__filter" data-filter="show">Shows</button>
+          <button class="portfolio__filter" data-filter="corporativo">Corporativo</button>
+          <button class="portfolio__filter" data-filter="casamento">Casamentos</button>
+          <button class="portfolio__filter" data-filter="formatura">Formaturas</button>
+        </div>
+
+        <!-- Grid de projetos -->
+        <div class="portfolio__grid" id="portfolioGrid" aria-label="Galeria de projetos">
+          <!-- Os cards são gerados via JS -->
+        </div>
+
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização de imagem" aria-hidden="true">
+        <div class="lightbox__overlay" id="lightboxOverlay"></div>
+        <div class="lightbox__content">
+          <button class="lightbox__close" id="lightboxClose" aria-label="Fechar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true">
+              <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+          </button>
+          <div class="lightbox__image-wrap">
+            <div class="lightbox__image-placeholder" id="lightboxImage" aria-hidden="true"></div>
+          </div>
+          <div class="lightbox__info">
+            <h3 class="lightbox__title" id="lightboxTitle"></h3>
+            <p class="lightbox__meta" id="lightboxMeta"></p>
+          </div>
+          <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true">
+              <path d="M15 18l-6-6 6-6"/>
+            </svg>
+          </button>
+          <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Próximo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24" aria-hidden="true">
+              <path d="M9 18l6-6-6-6"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         CTA SECTION
+    ======================================== -->
+    <section class="cta section section--dark" aria-label="Solicite seu orçamento">
+      <div class="cta__bg" aria-hidden="true">
+        <div class="cta__bg-glow cta__bg-glow--1"></div>
+        <div class="cta__bg-glow cta__bg-glow--2"></div>
+      </div>
+      <div class="container cta__container">
+        <div class="cta__content animate-on-scroll">
+          <span class="section__tag">Pronto para começar?</span>
+          <h2 class="cta__title">Seu próximo evento merece o <span class="highlight">melhor</span></h2>
+          <p class="cta__subtitle">
+            Entre em contato agora mesmo e receba um orçamento personalizado em menos de 24 horas. Nossa equipe está pronta para transformar sua visão em realidade.
+          </p>
+          <div class="cta__actions">
+            <a
+              href="https://wa.me/5584996536781?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento%20para%20meu%20evento!"
+              class="btn btn--primary btn--xl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Falar no WhatsApp Agora
+            </a>
+          </div>
+          <p class="cta__note">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            Atendimento garantido em até 24h • Orçamento sem compromisso
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================
+         CONTATO
+    ======================================== -->
+    <section id="contato" class="contato section" aria-label="Contato e localização">
+      <div class="container">
+
+        <div class="section__header animate-on-scroll">
+          <span class="section__tag">Fale conosco</span>
+          <h2 class="section__title">Estamos prontos para <span class="highlight">atender você</span></h2>
+        </div>
+
+        <div class="contato__grid">
+
+          <!-- Informações de contato -->
+          <div class="contato__info animate-on-scroll" data-animation="slide-left">
+
+            <div class="contato__item">
+              <div class="contato__item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .82h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.25a16 16 0 006.29 6.29l1.61-1.34a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 15.7v1.22z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="contato__item-title">Telefone / WhatsApp</h3>
+                <a href="tel:+5584996536781" class="contato__item-value">(84) 9 9653-6781</a>
+              </div>
+            </div>
+
+            <div class="contato__item">
+              <div class="contato__item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="contato__item-title">E-mail</h3>
+                <a href="mailto:topmixsonorizacao@gmail.com" class="contato__item-value">topmixsonorizacao@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contato__item">
+              <div class="contato__item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="contato__item-title">Endereço</h3>
+                <p class="contato__item-value">Natal – RN</p>
+              </div>
+            </div>
+
+            <div class="contato__item">
+              <div class="contato__item-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+                  <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="contato__item-title">Horário de Atendimento</h3>
+                <p class="contato__item-value">Seg – Sex: 8h às 18h<br />Sáb: 8h às 13h</p>
+              </div>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="contato__social">
+              <h3 class="contato__social-title">Siga-nos</h3>
+              <div class="contato__social-links">
+                <a href="https://instagram.com/topmixsonorizacao" class="contato__social-link" aria-label="Instagram da Topmix" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                  </svg>
+                </a>
+                <a href="https://facebook.com/topmixsonorizacao" class="contato__social-link" aria-label="Facebook da Topmix" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+                <a href="#" class="contato__social-link" aria-label="YouTube da Topmix" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                    <path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                </a>
+                <a href="#" class="contato__social-link" aria-label="TikTok da Topmix" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                    <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.67a8.18 8.18 0 004.78 1.52V6.72a4.85 4.85 0 01-1.01-.03z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Botão WhatsApp principal -->
+            <a
+              href="https://wa.me/5584996536781?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento!"
+              class="btn btn--primary btn--lg contato__whatsapp-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Chamar no WhatsApp
+            </a>
+          </div>
+
+          <!-- Mapa -->
+          <div class="contato__map animate-on-scroll" data-animation="slide-right">
+            <div class="contato__map-wrap">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197!2d-46.6522!3d-23.5629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localização da Topmix Sonorização no Google Maps"
+              ></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================
+       RODAPÉ
+  ======================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__top">
+      <div class="container footer__top-container">
+        <div class="footer__brand">
+          <a href="#hero" class="footer__logo" aria-label="Topmix Sonorização">
+            <img src="assets/images/Projeto Topmix/logo branca.png" alt="Topmix Sonorização" class="footer__logo-img" />
+          </a>
+          <p class="footer__tagline">Transformamos eventos em experiências inesquecíveis.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Navegação do rodapé">
+          <h4 class="footer__nav-title">Links rápidos</h4>
+          <ul role="list">
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav" aria-label="Serviços no rodapé">
+          <h4 class="footer__nav-title">Serviços</h4>
+          <ul role="list">
+            <li><a href="#servicos">Estrutura de Eventos</a></li>
+            <li><a href="#servicos">Sonorização Profissional</a></li>
+            <li><a href="#servicos">Iluminação Cênica</a></li>
+            <li><a href="#servicos">Painéis de LED</a></li>
+          </ul>
+        </nav>
+        <div class="footer__contact">
+          <h4 class="footer__nav-title">Contato</h4>
+          <p><a href="tel:+5584996536781">(84) 9 9653-6781</a></p>
+          <p><a href="mailto:topmixsonorizacao@gmail.com">topmixsonorizacao@gmail.com</a></p>
+          <p>Natal – RN</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container footer__bottom-container">
+        <p class="footer__copy">© 2024 Topmix Sonorização. Todos os direitos reservados.</p>
+        <p class="footer__dev">Feito com paixão para eventos extraordinários</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>
